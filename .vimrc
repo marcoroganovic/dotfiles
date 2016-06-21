@@ -1,6 +1,8 @@
 set nocompatible
 syntax enable
 set number
+set numberwidth=5
+
 set encoding=utf-8
 set showcmd
 filetype off
@@ -44,6 +46,12 @@ set noswapfile
 set hidden
 set autoread
 
+let g:html_indent_tags = 'li\|p'
+
+set splitbelow
+set splitright
+set textwidth=80
+set colorcolumn=+1
 " Colorscheme
 set t_Co=256
 set background=dark
