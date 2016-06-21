@@ -67,5 +67,6 @@ set ai
 set wrap
 set laststatus=2
 
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 " Mappings
 map <silent> <C-n> :NERDTreeToggle<CR>
