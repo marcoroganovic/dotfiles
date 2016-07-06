@@ -1,7 +1,7 @@
 set nocompatible
 syntax enable
 set number
-set numberwidth=5
+set numberwidth=4
 
 set encoding=utf-8
 set showcmd
@@ -33,6 +33,10 @@ Bundle 'leshill/vim-json'
 Bundle 'indenthtml.vim'
 Bundle 'tpope/vim-markdown'
 Bundle 'scrooloose/nerdtree'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
 
 call vundle#end()
 " Vundle end
@@ -45,13 +49,11 @@ set noswapfile
 
 set hidden
 set autoread
-
-let g:html_indent_tags = 'li\|p'
-
 set splitbelow
 set splitright
 set textwidth=80
 set colorcolumn=+1
+
 " Colorscheme
 set t_Co=256
 set background=dark
@@ -59,7 +61,7 @@ let g:kolor_italic=1
 let g:kolor_bold=1
 let g:kolor_underlined=0
 let g:kolor_aletrantive_matchparen=0
-colorscheme kolor 
+colorscheme brogrammer   
 " colorscheme apprentice || lapis256 || CodeFactoryv3 || PaperColor
 
 set expandtab
@@ -70,3 +72,16 @@ set laststatus=2
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 " Mappings
 map <silent> <C-n> :NERDTreeToggle<CR>
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
+nnoremap <c-s> :w<CR>
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+inoremap <c-s> <Esc>:w<CR>
+inoremap qq <ESC>
+vnoremap <c-s> <Esc>:w<CR>
+
