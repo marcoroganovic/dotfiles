@@ -10,9 +10,15 @@ set nowrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set smarttab
 set backspace=indent,eol,start
 set autoindent
 set smartindent
+
+
+set wildmenu
+set wildmode=list:longest,full
+
 
 " Searching
 set hlsearch
@@ -25,6 +31,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Bundle 'gmarik/vundle'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'chriskempson/base16-vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'leshill/vim-json'
@@ -39,8 +46,21 @@ Bundle 'honza/vim-snippets'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'joshdick/onedark.vim'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'digitaltoad/vim-pug'
+Plugin 'rust-lang/rust.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Yggdroot/indentLine'
+Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end()
+
+"indentLine config
+let g:indentLine_enabled = 1
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_corol_term = 239
+let g:indentLine_char = '¦'
+let g:indentLine_leadingSpaceChar = '⋅'
 
 
 filetype plugin indent on
@@ -55,6 +75,7 @@ set splitbelow
 set splitright
 set textwidth=80
 set colorcolumn=+1
+hi Normal ctermbg=none
 
 "Colorscheme
 set background=dark
