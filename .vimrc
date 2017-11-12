@@ -52,16 +52,11 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'jiangmiao/auto-pairs'
-
+Plugin 'fatih/vim-go'
 call vundle#end()
 
-"indentLine config
-let g:indentLine_enabled = 1
-let g:indentLine_leadingSpaceEnabled = 1
-let g:indentLine_corol_term = 239
-let g:indentLine_char = '¦'
-let g:indentLine_leadingSpaceChar = '⋅'
 
+let g:go_version_warning = 0
 
 filetype plugin indent on
 
