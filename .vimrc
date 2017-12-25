@@ -98,6 +98,7 @@ set ai
 set laststatus=2
 
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd VimEnter * call Tip()
 
 
 " Mappings
