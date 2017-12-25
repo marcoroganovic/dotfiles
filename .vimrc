@@ -53,6 +53,9 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'fatih/vim-go'
+Plugin 'elmcast/elm-vim'
+Plugin 'jonatasbaldin/vim-tips'
+
 call vundle#end()
 
 
